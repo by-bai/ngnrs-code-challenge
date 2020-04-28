@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fancy Form</title>
+
+  <!-- You may add more stuff here -->
+  <link href="style.css" rel="stylesheet" />
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+<body>
+  
+  
+  <!-- You may wrap the form in your own elements if necessary. -->
+  <div class="container">
+    <div class="header">
+      <h1>Bitcoin Payment</h1>
+    </div>
+
+    <form id="form" class="form">
+
+      <div class="form-control"> 
+        <i class="fas fa-user"></i>
+        <label for="input-address">Bitcoin Address</label>
+        <input id="input-address" placeholder="16q4PinynazaMYfv24juNLkbjkDQxJo2dc" maxlength="35" />
+        <span class="tooltip"data-tooltip="A valid address contains 26-35 alphanumeric characters beginning with 1, 3 or bc1"><i class="fas fa-question-circle"></i></span>
+        <i class="fas fa-check-circle"></i>
+			  <i class="fas fa-exclamation-circle"></i>
+			  <small>Error message</small>
+
+
+      </div>
+      
+      <div class="form-control">
+        <i class="fab fa-bitcoin"></i>
+        <label for="input-amount">Amount to send</label>
+        <input id="input-amount" placeholder="0.0000" />
+        <i class="fas fa-check-circle"></i>
+			  <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control"> 
+        <i class="fas fa-key"></i>
+        <label for="input-otp">OTP Authentication</label>
+        <input id="input-otp" placeholder="SMS OTP" maxlength="6" />
+        <span class="tooltip"data-tooltip="6-digit OTP sent to your registered mobile number via SMS"><i class="fas fa-question-circle"></i></span>
+        <i class="fas fa-check-circle"></i>
+			  <i class="fas fa-exclamation-circle"></i>
+			  <small>Error message</small>
+      </div>
+
+      <button class="btn"><span>Send BTC</span></button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
